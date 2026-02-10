@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Note Taking App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>📝 Interactive Note-Taking App</h1>
+
+<div class="note-form">
+  <input type="text" id="titleInput" placeholder="Note Title">
+  <textarea id="contentInput" placeholder="Note Content"></textarea>
+
+  <select id="categoryInput">
+    <option value="">Select Category</option>
+    <option value="Work">Work</option>
+    <option value="Personal">Personal</option>
+    <option value="Ideas">Ideas</option>
+  </select>
+
+  <button id="saveBtn">Save Note</button>
+  <p id="errorMsg"></p>
+</div>
+
+<div class="filter">
+  <select id="filterCategory">
+    <option value="All">All Categories</option>
+    <option value="Work">Work</option>
+    <option value="Personal">Personal</option>
+    <option value="Ideas">Ideas</option>
+  </select>
+
+  <button id="clearAllBtn" class="danger">Clear All</button>
+</div>
+
+<ul id="notesList"></ul>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
